@@ -1,10 +1,18 @@
 public class Filme {
-    String nomeFilme;
-    int anoLancamento;
-    boolean incluidoPlano;
-    double somaAvaliacao;
-    int totalAvaliacao;
-    int duracaoMinutos;
+    private String nomeFilme;
+    private int anoLancamento;
+    private boolean incluidoPlano;
+    private double somaAvaliacao;
+    private int totalAvaliacao;
+    private int duracaoMinutos;
+
+    int getTotalAvaliacao(){
+        return totalAvaliacao;
+    }
+
+    double getSomaAvaliacao(){
+        return somaAvaliacao / totalAvaliacao;
+    }
 
     void exibeInfomacaoFilme(){
         System.out.println("Nome do Filme: "+nomeFilme);
@@ -16,7 +24,5 @@ public class Filme {
         totalAvaliacao ++;
     }
 
-    double getSomaAvaliacao(){
-        return somaAvaliacao / totalAvaliacao;
-    }
+
 }

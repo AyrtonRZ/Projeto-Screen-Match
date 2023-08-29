@@ -12,6 +12,7 @@ public class Principal {
         filme01.avaliacao(8.5);
         filme01.avaliacao(7.9);
 
+        System.out.println("Total de Avaliacoes: "+filme01.getTotalAvaliacao());
         System.out.println("Media de avaliacao do filme: "+filme01.getSomaAvaliacao());
     }
 }
