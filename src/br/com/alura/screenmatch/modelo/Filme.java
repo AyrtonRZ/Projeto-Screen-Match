@@ -8,6 +8,22 @@ public class Filme {
     private int totalAvaliacao;
     private int duracaoMinutos;
 
+    public String getNomeFilme() {
+        return nomeFilme;
+    }
+
+    public int getAnoLancamento() {
+        return anoLancamento;
+    }
+
+    public boolean isIncluidoPlano() {
+        return incluidoPlano;
+    }
+
+    public int getDuracaoMinutos() {
+        return duracaoMinutos;
+    }
+
     public int getTotalAvaliacao(){
         return totalAvaliacao;
     }
@@ -16,9 +32,25 @@ public class Filme {
         return somaAvaliacao / totalAvaliacao;
     }
 
+    public void setNomeFilme(String nomeFilme){
+        this.nomeFilme = nomeFilme;
+    }
+
+    public void setAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
+    }
+
+    public void setIncluidoPlano(boolean incluidoPlano) {
+        this.incluidoPlano = incluidoPlano;
+    }
+
+    public void setDuracaoMinutos(int duracaoMinutos) {
+        this.duracaoMinutos = duracaoMinutos;
+    }
+
     public void exibeInfomacaoFilme(){
-        System.out.println("Nome do br.com.alura.screenmatch.modelo.Filme: "+nomeFilme);
-        System.out.println("Ano de Lancamento: "+anoLancamento);
+        System.out.println("Nome do Filme: "+getNomeFilme());
+        System.out.println("Ano de Lancamento: "+getAnoLancamento());
     }
 
     public void avaliacao(double nota){
