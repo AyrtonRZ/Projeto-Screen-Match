@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56c1cc27-88f4-4ac9-837f-7b20810d1921" name="Changes" comment="feat: adiciona chamada dos metodos na classe principal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Filme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +72,7 @@
       <updated>1692573655182</updated>
       <workItem from="1692573655696" duration="1638000" />
       <workItem from="1693315651261" duration="1185000" />
-      <workItem from="1693316899822" duration="2540000" />
+      <workItem from="1693316899822" duration="3550000" />
     </task>
     <task id="LOCAL-00001" summary="feat: adiciona chamada dos metodos na classe principal">
       <option name="closed" value="true" />
