@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56c1cc27-88f4-4ac9-837f-7b20810d1921" name="Changes" comment="feat: adiciona sobrescrita do metodo getDuracaoMinutos">
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/calculo/Classificavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Episodio.java" afterDir="false" />
+    <list default="true" id="56c1cc27-88f4-4ac9-837f-7b20810d1921" name="Changes" comment="feat: adiciona interfaces para a classificacao">
+      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/calculo/FiltroRecomendacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Episodio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Episodio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Titulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +104,7 @@
       <workItem from="1693346474039" duration="4634000" />
       <workItem from="1693420016720" duration="5414000" />
       <workItem from="1693443157009" duration="1374000" />
-      <workItem from="1693487260121" duration="5413000" />
+      <workItem from="1693487260121" duration="11316000" />
     </task>
     <task id="LOCAL-00001" summary="feat: adiciona chamada dos metodos na classe principal">
       <option name="closed" value="true" />
@@ -143,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693447072330</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: adiciona interfaces para a classificacao">
+      <option name="closed" value="true" />
+      <created>1693501455137</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693501455138</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +214,7 @@
     <MESSAGE value="feat: adiciona getters e setteres" />
     <MESSAGE value="feat: adiciona classes Titulos e Series aplicando herancas" />
     <MESSAGE value="feat: adiciona sobrescrita do metodo getDuracaoMinutos" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adiciona sobrescrita do metodo getDuracaoMinutos" />
+    <MESSAGE value="feat: adiciona interfaces para a classificacao" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adiciona interfaces para a classificacao" />
   </component>
 </project>
