@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56c1cc27-88f4-4ac9-837f-7b20810d1921" name="Changes" comment="feat: adiciona getters e setteres">
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Serie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Titulo.java" afterDir="false" />
+    <list default="true" id="56c1cc27-88f4-4ac9-837f-7b20810d1921" name="Changes" comment="feat: adiciona classes Titulos e Series aplicando herancas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelo/Titulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,9 @@
       <workItem from="1692573655696" duration="1638000" />
       <workItem from="1693315651261" duration="1185000" />
       <workItem from="1693316899822" duration="6490000" />
-      <workItem from="1693346474039" duration="3695000" />
+      <workItem from="1693346474039" duration="4634000" />
+      <workItem from="1693420016720" duration="5414000" />
+      <workItem from="1693443157009" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="feat: adiciona chamada dos metodos na classe principal">
       <option name="closed" value="true" />
@@ -121,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693322598417</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: adiciona classes Titulos e Series aplicando herancas">
+      <option name="closed" value="true" />
+      <created>1693353433738</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693353433738</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +188,7 @@
     <MESSAGE value="feat: adiciona chamada dos metodos na classe principal" />
     <MESSAGE value="feat: adiciona pacotes e modificadores de classes nos atributos e metodos" />
     <MESSAGE value="feat: adiciona getters e setteres" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adiciona getters e setteres" />
+    <MESSAGE value="feat: adiciona classes Titulos e Series aplicando herancas" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adiciona classes Titulos e Series aplicando herancas" />
   </component>
 </project>

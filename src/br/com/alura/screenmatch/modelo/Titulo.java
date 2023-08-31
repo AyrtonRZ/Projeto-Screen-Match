@@ -49,8 +49,14 @@ public class Titulo {
     }
 
     public void exibeInfomacao(){
-        System.out.println("Nome do Filme: "+getNome());
+        System.out.println("\nNome : "+getNome());
         System.out.println("Ano de Lancamento: "+getAnoLancamento());
+        if (incluidoPlano == true) {
+            System.out.println("Incluso no Plano: Sim");
+        } else {
+            System.out.println("Incluso no Plano: Nao");
+        }
+
     }
 
     public void avaliacao(double nota){

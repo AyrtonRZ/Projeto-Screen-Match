@@ -14,7 +14,7 @@ public class Serie extends Titulo {
         this.temporadas = temporadas;
     }
 
-    public boolean isAtiva() {
+    public boolean getAtiva() {
         return ativa;
     }
 
@@ -37,4 +37,5 @@ public class Serie extends Titulo {
     public void setMinutosPorEpisodio(int minutosPorEpisodio) {
         this.minutosPorEpisodio = minutosPorEpisodio;
     }
+
 }
