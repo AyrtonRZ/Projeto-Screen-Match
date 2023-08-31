@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelo.Filme;
 import br.com.alura.screenmatch.modelo.Serie;
 
@@ -81,6 +82,12 @@ public class Principal {
         System.out.println("Minutos por episodio: "+serie01.getMinutosPorEpisodio());
         System.out.println("Duracao em Minutos: "+serie01.getDuracaoMinutos());
 
+        //uso da classe calculo
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(filme01);
+        calculadora.inclui(filme02);
+        calculadora.inclui(serie01);
+        System.out.println("Tempo para maratonar series e filmes: "+calculadora.getTempoTotal());
     }
 
 }
