@@ -79,5 +79,8 @@ public class Principal {
         System.out.println("Total Temporadas: "+serie01.getTemporadas());
         System.out.println("Episodio por Temporada: "+serie01.getEpisodioPorTemporada());
         System.out.println("Minutos por episodio: "+serie01.getMinutosPorEpisodio());
+        System.out.println("Duracao em Minutos: "+serie01.getDuracaoMinutos());
+
     }
+
 }
