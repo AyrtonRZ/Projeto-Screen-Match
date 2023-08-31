@@ -1,3 +1,6 @@
+import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
+import br.com.alura.screenmatch.modelo.Episodio;
 import br.com.alura.screenmatch.modelo.Filme;
 import br.com.alura.screenmatch.modelo.Serie;
 
@@ -40,13 +43,13 @@ public class Principal {
         System.out.println("\n*************** Lista Filmes ******************\n");
 
         filme01.exibeInfomacao();
-        System.out.println("Avaliacao: "+filme01.getSomaAvaliacao());
+        System.out.println("Avaliacao: "+filme01.getMediaAvaliacao());
         System.out.println("Total de Avaliacoes: "+filme01.getTotalAvaliacao());
         System.out.println("Duracao em Minutos: "+filme01.getDuracaoMinutos());
         System.out.println("Diretor: "+filme01.getDiretor());
 
         filme02.exibeInfomacao();
-        System.out.println("Avaliacao: "+filme02.getSomaAvaliacao());
+        System.out.println("Avaliacao: "+filme02.getMediaAvaliacao());
         System.out.println("Total de Avaliacoes: "+filme02.getTotalAvaliacao());
         System.out.println("Duracao em Minutos: "+filme02.getDuracaoMinutos());
         System.out.println("Diretor: "+filme02.getDiretor());
@@ -69,7 +72,7 @@ public class Principal {
         System.out.println("\n***************** Lista Series ******************\n");
 
         serie01.exibeInfomacao();
-        System.out.println("Avaliacao: "+serie01.getSomaAvaliacao());
+        System.out.println("Avaliacao: "+serie01.getMediaAvaliacao());
         System.out.println("Total de Avaliacoes: "+serie01.getTotalAvaliacao());
         if (serie01.getAtiva()){
             System.out.println("Ativa: Sim");
@@ -79,5 +82,28 @@ public class Principal {
         System.out.println("Total Temporadas: "+serie01.getTemporadas());
         System.out.println("Episodio por Temporada: "+serie01.getEpisodioPorTemporada());
         System.out.println("Minutos por episodio: "+serie01.getMinutosPorEpisodio());
+        System.out.println("Duracao em Minutos: "+serie01.getDuracaoMinutos());
+
+        //uso da classe calculo
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(filme01);
+        calculadora.inclui(filme02);
+        calculadora.inclui(serie01);
+        System.out.println("Tempo para maratonar series e filmes: "+calculadora.getTempoTotal());
+
+        //trabalhando com classe filtro e usando interface
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(filme01);
+
+        //Trabalhando com a classe episodio
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(serie01);
+        episodio.setTotalVisualizacao(300);
+        filtro.filtra(episodio);
+
+
+
     }
+
 }
