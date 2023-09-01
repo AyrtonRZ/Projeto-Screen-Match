@@ -1,18 +1,15 @@
+import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
+import br.com.alura.screenmatch.modelo.Episodio;
 import br.com.alura.screenmatch.modelo.Filme;
 import br.com.alura.screenmatch.modelo.Serie;
 
 public class Principal {
     public static void main(String[] args) {
         //instancia objetos
-        //filmes
         Filme filme01 = new Filme();
-        Filme filme02 = new Filme();
-
-        //series
-        Serie serie01 = new Serie();
-
+        
         //Atribuir valores aos Filmes
-
         filme01.setNome("O poderoso Chefao");
         filme01.setAnoLancamento(1987);
         filme01.setIncluidoPlano(true);
@@ -22,6 +19,8 @@ public class Principal {
         filme01.avaliacao(9.6);
         filme01.avaliacao(9.7);
         filme01.avaliacao(9.8);
+
+        Filme filme02 = new Filme();
 
         filme02.setNome("Matrix");
         filme02.setAnoLancamento(1994);
@@ -40,18 +39,20 @@ public class Principal {
         System.out.println("\n*************** Lista Filmes ******************\n");
 
         filme01.exibeInfomacao();
-        System.out.println("Avaliacao: "+filme01.getSomaAvaliacao());
+        System.out.println("Avaliacao: "+filme01.getMediaAvaliacao());
         System.out.println("Total de Avaliacoes: "+filme01.getTotalAvaliacao());
         System.out.println("Duracao em Minutos: "+filme01.getDuracaoMinutos());
         System.out.println("Diretor: "+filme01.getDiretor());
 
         filme02.exibeInfomacao();
-        System.out.println("Avaliacao: "+filme02.getSomaAvaliacao());
+        System.out.println("Avaliacao: "+filme02.getMediaAvaliacao());
         System.out.println("Total de Avaliacoes: "+filme02.getTotalAvaliacao());
         System.out.println("Duracao em Minutos: "+filme02.getDuracaoMinutos());
         System.out.println("Diretor: "+filme02.getDiretor());
 
         //Atribuir valores as series
+        Serie serie01 = new Serie();
+
         serie01.setNome("Lost");
         serie01.setAnoLancamento(2002);
         serie01.setTemporadas(10);
@@ -69,7 +70,7 @@ public class Principal {
         System.out.println("\n***************** Lista Series ******************\n");
 
         serie01.exibeInfomacao();
-        System.out.println("Avaliacao: "+serie01.getSomaAvaliacao());
+        System.out.println("Avaliacao: "+serie01.getMediaAvaliacao());
         System.out.println("Total de Avaliacoes: "+serie01.getTotalAvaliacao());
         if (serie01.getAtiva()){
             System.out.println("Ativa: Sim");
@@ -79,5 +80,29 @@ public class Principal {
         System.out.println("Total Temporadas: "+serie01.getTemporadas());
         System.out.println("Episodio por Temporada: "+serie01.getEpisodioPorTemporada());
         System.out.println("Minutos por episodio: "+serie01.getMinutosPorEpisodio());
+        System.out.println("Duracao em Minutos: "+serie01.getDuracaoMinutos());
+
+        //uso da classe calculo
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+
+        calculadora.inclui(filme01);
+        calculadora.inclui(filme02);
+        calculadora.inclui(serie01);
+        System.out.println("Tempo para maratonar series e filmes: "+calculadora.getTempoTotal());
+
+        //trabalhando com classe filtro e usando interface
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+
+        filtro.filtra(filme01);
+
+        //Trabalhando com a classe episodio
+        Episodio episodio = new Episodio();
+
+        episodio.setNumero(1);
+        episodio.setSerie(serie01);
+        episodio.setTotalVisualizacao(300);
+        filtro.filtra(episodio);
+
     }
+
 }
