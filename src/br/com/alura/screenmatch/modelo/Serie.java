@@ -1,7 +1,5 @@
 package br.com.alura.screenmatch.modelo;
 
-import br.com.alura.screenmatch.calculo.Classificavel;
-
 public class Serie extends Titulo {
     private int temporadas;
     private boolean ativa;
