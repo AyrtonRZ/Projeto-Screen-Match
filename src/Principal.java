@@ -7,15 +7,9 @@ import br.com.alura.screenmatch.modelo.Serie;
 public class Principal {
     public static void main(String[] args) {
         //instancia objetos
-        //filmes
         Filme filme01 = new Filme();
-        Filme filme02 = new Filme();
-
-        //series
-        Serie serie01 = new Serie();
-
+        
         //Atribuir valores aos Filmes
-
         filme01.setNome("O poderoso Chefao");
         filme01.setAnoLancamento(1987);
         filme01.setIncluidoPlano(true);
@@ -25,6 +19,8 @@ public class Principal {
         filme01.avaliacao(9.6);
         filme01.avaliacao(9.7);
         filme01.avaliacao(9.8);
+
+        Filme filme02 = new Filme();
 
         filme02.setNome("Matrix");
         filme02.setAnoLancamento(1994);
@@ -55,6 +51,8 @@ public class Principal {
         System.out.println("Diretor: "+filme02.getDiretor());
 
         //Atribuir valores as series
+        Serie serie01 = new Serie();
+
         serie01.setNome("Lost");
         serie01.setAnoLancamento(2002);
         serie01.setTemporadas(10);
@@ -86,6 +84,7 @@ public class Principal {
 
         //uso da classe calculo
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+
         calculadora.inclui(filme01);
         calculadora.inclui(filme02);
         calculadora.inclui(serie01);
@@ -93,16 +92,16 @@ public class Principal {
 
         //trabalhando com classe filtro e usando interface
         FiltroRecomendacao filtro = new FiltroRecomendacao();
+
         filtro.filtra(filme01);
 
         //Trabalhando com a classe episodio
         Episodio episodio = new Episodio();
+
         episodio.setNumero(1);
         episodio.setSerie(serie01);
         episodio.setTotalVisualizacao(300);
         filtro.filtra(episodio);
-
-
 
     }
 

@@ -1,7 +1,5 @@
 package br.com.alura.screenmatch.calculo;
 
-import br.com.alura.screenmatch.modelo.Titulo;
-
 public class FiltroRecomendacao {
 
     public void filtra(Classificavel classificavel) {
@@ -12,6 +10,5 @@ public class FiltroRecomendacao {
         } else {
             System.out.println("Esta com baixa avaliacao.");
         }
-
     }
 }
