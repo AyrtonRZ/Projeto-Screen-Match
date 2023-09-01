@@ -28,7 +28,7 @@ public class Titulo {
         return totalAvaliacao;
     }
 
-    public double getSomaAvaliacao(){
+    public double getMediaAvaliacao(){
         return somaAvaliacao / totalAvaliacao;
     }
 
