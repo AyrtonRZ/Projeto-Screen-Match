@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
-import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
-import br.com.alura.screenmatch.modelo.Episodio;
-import br.com.alura.screenmatch.modelo.Filme;
-import br.com.alura.screenmatch.modelo.Serie;
+import screenmatch.calculo.CalculadoraDeTempo;
+import screenmatch.calculo.FiltroRecomendacao;
+import screenmatch.modelo.Episodio;
+import screenmatch.modelo.Filme;
+import screenmatch.modelo.Serie;
 
 public class Principal {
     public static void main(String[] args) {
