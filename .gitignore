@@ -24,6 +24,8 @@ bin/
 
 ### VS Code ###
 .vscode/
+.idea/
+.ScreenMatch.iml/
 
 ### Mac OS ###
 .DS_Store
