@@ -103,6 +103,13 @@ public class Principal {
         episodio.setTotalVisualizacao(300);
         filtro.filtra(episodio);
 
+        var filme03 = new Filme();
+        filme03.setNome("DogVille");
+        filme03.setAnoLancamento(2003);
+        filme03.setDuracaoMinutos(200);
+        filme03.setIncluidoPlano(false);
+        filme03.avaliacao(9.5);
+
     }
 
 }
