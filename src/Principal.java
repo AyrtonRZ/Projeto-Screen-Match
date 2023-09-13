@@ -120,6 +120,8 @@ public class Principal {
         
         System.out.println("Lista de Filmes: "+listaDeFilmes.size());
         System.out.println("Primeiro Filme: "+listaDeFilmes.get(0).getNome());
+        // System.out.println(listaDeFilmes);
+        System.out.println(listaDeFilmes.get(0).toString());
     }
 
 }
