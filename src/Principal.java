@@ -1,8 +1,10 @@
-import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
-import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
-import br.com.alura.screenmatch.modelo.Episodio;
-import br.com.alura.screenmatch.modelo.Filme;
-import br.com.alura.screenmatch.modelo.Serie;
+import java.util.ArrayList;
+
+import screenmatch.calculo.CalculadoraDeTempo;
+import screenmatch.calculo.FiltroRecomendacao;
+import screenmatch.modelo.Episodio;
+import screenmatch.modelo.Filme;
+import screenmatch.modelo.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -103,6 +105,23 @@ public class Principal {
         episodio.setTotalVisualizacao(300);
         filtro.filtra(episodio);
 
+        var filme03 = new Filme();
+        filme03.setNome("DogVille");
+        filme03.setAnoLancamento(2003);
+        filme03.setDuracaoMinutos(200);
+        filme03.setIncluidoPlano(false);
+        filme03.avaliacao(9.5);
+
+        //Estudo em arrays
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filme01);
+        listaDeFilmes.add(filme02);
+        listaDeFilmes.add(filme03);
+        
+        System.out.println("Lista de Filmes: "+listaDeFilmes.size());
+        System.out.println("Primeiro Filme: "+listaDeFilmes.get(0).getNome());
+        // System.out.println(listaDeFilmes);
+        System.out.println(listaDeFilmes.get(0).toString());
     }
 
 }
